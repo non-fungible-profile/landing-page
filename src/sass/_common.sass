@@ -295,69 +295,8 @@ a.btn
         margin-right: 40px
       +a
         margin: 0 0 16px 
-  &__burger
-    position: relative
-    z-index: 12
-    width: 64px
-    height: 64px
-    margin-right: -17px
-    border-radius: 50% 
-    padding: 5px 
-    background: transparent
-    font-size: 0
-    transition: all .25s
-    +d
-      width: 48px
-      height: 48px
-      margin-right: -10px
-    +m
-      width: 32px
-      height: 32px
-      margin-right: -5px
-      padding: 0
-    &:before,
-    &:after
-      content: ""
-      display: inline-block
-      width: 32px
-      height: 2px
-      background: $wh
-      transition: transform .25s 
-      +d
-        width: 24px
-      +m
-        background: $dark 
-    &:before
-      margin-bottom: 4px
-      +d
-        margin-bottom: 2.5px
-    &:after
-      margin-top: 4px
-      +d
-        margin-top: 2.5px
-    &_dark
-      &:before,
-      &:after
-        background: $bl 
-    &:hover
-      opacity: .85 
-    &.active
-      background: $purple
-      +m
-        background: none  
-      &:before,
-      &:after
-        background: $wh
-        +m
-          background: $bl  
-      &:before
-        transform: translateY(5px) rotate(45deg)
-        +d
-          transform: translateY(3.5px) rotate(45deg)
-      &:after
-        transform: translateY(-5px) rotate(-45deg)
-        +d
-          transform: translateY(-3.5px) rotate(-45deg)
+  &__details__btn
+
   &__wrapper
     position: fixed
     top: 0
