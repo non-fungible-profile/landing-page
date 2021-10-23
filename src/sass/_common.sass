@@ -27,6 +27,13 @@
 =f
   font-family: 'Poppins', sans-serif
 
+@keyframes flipping
+  0%  {content: "An OG"}
+  20%  {content: "An active voter"}
+  40%  {content: "A degen"}
+  60%  {content: "An NFT collector"}
+  80%  {content: "A DAO contributor"}
+
 $dark: #111029
 $bl: #00113B
 $wh: #fff
@@ -549,7 +556,7 @@ a.btn
     +d
       max-height: 852px
   &__wrap
-    max-width: 490px
+    max-width: 700px
     +d
       max-width: 380px
     +m
@@ -570,6 +577,18 @@ a.btn
       letter-spacing: -.15px
     span
       display: block
+  &__flipping__text
+    margin-top: 30px
+  &__flipping__text:before
+    background: green;
+    color: white;
+    width: fit-content;
+    border-radius: 8px;
+    padding: 0 20px 0 20px;
+    content: "An OG";
+    animation-name: flipping;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
   &__view
     position: absolute
     top: 320px

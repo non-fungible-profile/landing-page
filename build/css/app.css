@@ -1847,6 +1847,42 @@ button {
   transform: perspective(2500px) rotateX(0);
 }
 
+@-webkit-keyframes flipping {
+  0% {
+    content: "An OG";
+  }
+  20% {
+    content: "An active voter";
+  }
+  40% {
+    content: "A degen";
+  }
+  60% {
+    content: "An NFT collector";
+  }
+  80% {
+    content: "A DAO contributor";
+  }
+}
+
+@keyframes flipping {
+  0% {
+    content: "An OG";
+  }
+  20% {
+    content: "An active voter";
+  }
+  40% {
+    content: "A degen";
+  }
+  60% {
+    content: "An NFT collector";
+  }
+  80% {
+    content: "A DAO contributor";
+  }
+}
+
 html.no-scroll {
   overflow: hidden;
 }
@@ -2394,7 +2430,7 @@ a.btn {
 }
 
 .main__wrap {
-  max-width: 490px;
+  max-width: 700px;
 }
 
 .main__title {
@@ -2407,6 +2443,27 @@ a.btn {
 
 .main__title span {
   display: block;
+}
+
+.main__flipping__text {
+  margin-top: 30px;
+}
+
+.main__flipping__text:before {
+  background: green;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 8px;
+  padding: 0 20px 0 20px;
+  content: "An OG";
+  -webkit-animation-name: flipping;
+  animation-name: flipping;
+  -webkit-animation-duration: 12s;
+  animation-duration: 12s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 .main__view {
