@@ -2386,7 +2386,7 @@ a.btn {
 }
 
 .main__flipping__text:before {
-  background: green;
+  background: #FFBDBD;
   color: white;
   width: -webkit-fit-content;
   width: -moz-fit-content;

@@ -9,9 +9,10 @@ mixin header(classHeader, classBurger)
 				img.header__pic(src="img/logo.svg" alt="")
 			.header__social.header__social_main
 			.header__details__btn
-				button.btn.btn_purple
-					span.btn__text Mint Your NFP
-					+i('arrow-right')
+				a(href="https://www.app.profolio.eth.link/" target="#")
+					button.btn.btn_purple
+						span.btn__text Mint Your NFP
+						+i('arrow-right')
 		.header__wrapper.js-header-wrapper
 			.header__preview
 				a.header__logo(href="index.html")
@@ -150,13 +151,13 @@ mixin footer
 					.footer__title.h1 You only have one chance to make a first impression.
 					.footer__info.h4 Let’s make it an amazing one.
 				.footer__menu
-					a.footer__link(href="#") Mint NFP
+					a.footer__link(href="https://www.app.profolio.eth.link/" target="#") Mint NFP
 					a.footer__link(href="#") Explorer
 					a.footer__link(href="#") Twitter
 					a.footer__link(href="#") Forum
 					a.footer__link(href="#") Governance
 			.footer__bottom
-				.footer__copyright © 2021, Profil DAO
+				.footer__copyright © 2021, Profolio DAO
 				a.footer__scroll.js-scroll(href="#header") Back to top
 		.footer__bg
 			.footer__preview
